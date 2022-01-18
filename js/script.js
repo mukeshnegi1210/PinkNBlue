@@ -29,7 +29,7 @@ $(document).ready(function () {
     asNavFor: ".slider-nav"
   });
   $(".slider-nav").slick({
-    slidesToShow: 3,
+    slidesToShow:4,
     slidesToScroll: 1,
     asNavFor: ".slider-for",
     dots: false,
@@ -47,26 +47,49 @@ $(document).ready(function () {
           centerMode: true
         }
       },
+
       {
-        breakpoint: 600,
+        breakpoint: 767,
         settings: {
           arrows: false,
           vertical: false,
           centerMode: true,
-          slidesToShow: 2
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 567,
+        settings: {
+          arrows: false,
+          vertical: false,
+          centerMode: true,
+          slidesToShow: 1,
         }
       }
     ]
   });
 
+
+  
   // fixed header on scroll
-  $(window).scroll(function () {
+  // show/hide nav  header on page load
+
+  fixedHeader();
+
+  $(window).scroll(function() {
+      
+      // show/hide header on scroll
+      fixedHeader();
+  });
+
+
+  function fixedHeader() {
     if ($(document).scrollTop() > 50) {
       $("#Header").addClass("shrink bg-white shadow-sm");
     } else {
       $("#Header").removeClass("shrink bg-white shadow-sm");
     }
-  });
+  };
 
   // bottom to top scroll
   $(window).scroll(function () {
@@ -81,19 +104,15 @@ $(document).ready(function () {
     return false;
   });
 
- 
-
-
   var window_width = $(window).width();
   function mobile_tabs() {
-    
     $(".active-tab-indicator").click(function () {
       $(this).next(".tab-list").slideToggle();
     });
 
     $(".custom-tabs .tab-list li ").click(function () {
       var tab_text = $(this).text();
-    
+
       $(this)
         .closest(".tab-list")
         .prev(".active-tab-indicator")
@@ -104,8 +123,15 @@ $(document).ready(function () {
     });
   }
 
-  // aos init
-  AOS.init();
+  //  wow  animate iniate
+  wow = new WOW({
+    boxClass: "wow", // default
+    animateClass: "animated", // default
+    offset: 0, // default
+    mobile: true, // default
+    live: true // default
+  });
+  wow.init();
 
   if (window_width < 767) {
     mobile_tabs();

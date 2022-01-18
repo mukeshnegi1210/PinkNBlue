@@ -38,7 +38,7 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- aos css  -->
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/animate.css">
 
 
     <!-- custom css  -->
@@ -55,31 +55,30 @@
         <div class="header-top">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-5 col-md-4">
+                    <div class="col-4 col-md-4">
                         <a href="index.html" class="d-inline-block logo">
                             <img src="images/Icons/logo.png" alt="Company Name" class="img-fluid">
                         </a>
                     </div>
-                    <div class="col-7 col-md-8">
+                    <div class="col-8 col-md-8">
                         <div class="header-right d-flex justify-content-end align-items-center">
                             <div class="btn-group d-flex">
                                 <a href="#"
-                                    class="btn  d-none d-md-flex  py-1 px-3 justify-content-center btn-outline-primary rounded-pill align-items-center mr-3">
+                                    class="btn  d-none d-md-flex  py-1 px-3 justify-content-center btn-outline-primary rounded-pill align-items-center mr-2 mr-md-3">
                                     <span class="far fa-user mr-2 fs-18"></span>
                                     <span class="text">user
                                         login</span></a>
-                                <!-- <a href="#"
-                                    class="btn d-none d-md-flex py-0 pl-0 pr-3 justify-content-center  btn-outline-secondary rounded-pill  align-items-center mr-3"><img
-                                        class="mr-2" src="images/Icons/2-year-girl.png" alt=""><span class="text">2 year
-                                        girl </span><span class="ml-2 fas fa-caret-down"></span></a> -->
 
+                                <a href="#" class="d-inline-block d-md-none mr-2 mob-btn"><img
+                                        src="images/user-login.png" alt=""></a>
 
-                                <div class="dropdown age-selector-dropdown">
+                                <div class="dropdown age-selector-dropdown mr-2 mr-md-3">
                                     <button
-                                        class="btn d-none d-md-flex py-0 pl-0 pr-3 justify-content-center  btn-outline-secondary rounded-pill  align-items-center mr-3"
+                                        class="btn d-flex py-0 pl-0 pr-3 justify-content-center  btn-outline-secondary rounded-pill  align-items-center "
                                         type="button" id="AgeSelector" data-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="false">
-                                        <img class="mr-2" src="images/Icons/2-year-girl.png" alt=""><span class="text">2
+                                        <img class="mr-2" src="images/Icons/2-year-girl.png" alt=""><span
+                                            class="text text-nowrap">2
                                             year
                                             girl </span><span class="ml-2 fas fa-caret-down"></span>
                                     </button>
@@ -92,30 +91,6 @@
                                             girl</a>
                                     </div>
                                 </div>
-
-                                <a href="#" class="d-inline-block d-md-none mr-2 mob-btn"><img
-                                        src="images/user-login.png" alt=""></a>
-
-                                <div class="dropdown age-selector-dropdown">
-                                    <button
-                                        class="btn d-inline-block d-md-none mob-btn p-0 bg-transparent"
-                                        type="button" id="AgeSelectorMobile" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">
-                                        <img
-                                        src="images/2-year-girl.png" alt="">
-                                    </button>
-                                    <div class="dropdown-menu bg-secondary" aria-labelledby="AgeSelectorMobile">
-                                        <a class="dropdown-item text-white text-uppercase" href="#">3 year
-                                            girl</a>
-                                        <a class="dropdown-item  text-white text-uppercase" href="#">4 year
-                                            girl</a>
-                                        <a class="dropdown-item  text-white text-uppercase" href="#">5 year
-                                            girl</a>
-                                    </div>
-                                </div>
-
-                                <a href="#" class="mr-2 "></a>
-
                             </div>
                             <!-- menu toggler  -->
                             <span
@@ -123,14 +98,12 @@
                                 <span></span>
                                 <span></span>
                                 <span></span>
-
                             </span>
                             <!-- menu toggler  -->
-
                         </div>
                         <!-- primar menu  -->
 
-                        <nav class="primary-nav ">
+                        <nav class="primary-nav">
                             <!-- menu toggler  -->
                             <span class="d-inline-block rounded-circle text-white close-menu rounded-circle bg-primary">
                                 <span class="fas fa-times"></span>
@@ -138,8 +111,8 @@
                             </span>
                             <!-- menu toggler  -->
 
-                            <ul class="bg-gradient-1 d-flex justify-content-center  flex-column">
-                                <li><a href="#" class="text-uppercase font-weight-bold">Home</a></li>
+                            <ul class="bg-white d-flex justify-content-center  flex-column">
+                                <li><a href="#" class="text-uppercase font-weight-bold active">Home</a></li>
                                 <li><a href="#" class="text-uppercase font-weight-bold">About</a></li>
                                 <li><a href="#" class="text-uppercase font-weight-bold">service</a></li>
                                 <li><a href="#" class="text-uppercase font-weight-bold">Blog</a></li>
@@ -153,11 +126,11 @@
     <!------------- End Header -------------------->
 
     <!------------ Home Slider Section ------------>
-    <section id="HomeBanner" data-aos="fade-down" class="pb-3">
+    <section id="HomeBanner" class="pb-3 wow bounceInDown">
         <div class="container pt-4 overflow-x-hidden">
-            <div class="row">
+            <div class="row ">
                 <div class="col-lg-5">
-                    <div class="section-heading mb-3 mb-md-5 text-center text-lg-left">
+                    <div class="section-heading mb-3 text-center text-lg-left">
                         <h4 class="mb-2 text-primary">PARENTING TOOLS </h4>
                         <h2>OUR APP FEATURES </h2>
                     </div>
@@ -171,9 +144,9 @@
                                 <div class="icon mr-2">
                                     <img src="images/Icons/neak.png" alt="">
                                 </div>
-                                <div class="content">
-                                    <h4 class="text-dark"> DIAPER TRACKER </h4>
-                                    <span class="underline-mark d-inline-block">
+                                <div class="content d-flex flex-column">
+                                    <h4 class="text-dark text-uppercase"> DIAPER TRACKER </h4>
+                                    <span class="underline-mark d-inline-block my-1">
                                         <span class="inner-line d-inline-block d-flex align-items-center">
                                             <span class="bg-primary d-inline-block"></span>
                                             <span class="bg-secondary d-inline-block ml-2"></span>
@@ -189,10 +162,9 @@
                                 <div class="icon mr-2">
                                     <img src="images/Icons/vaccine.png" alt="">
                                 </div>
-                                <div class="content">
-                                    <h4 class="text-dark"> Vaccination Tracker
-                                    </h4>
-                                    <span class="underline-mark d-inline-block">
+                                <div class="content d-flex flex-column">
+                                    <h4 class="text-dark text-uppercase"> Vaccination Tracker </h4>
+                                    <span class="underline-mark d-inline-block my-1">
                                         <span class="inner-line d-inline-block d-flex align-items-center">
                                             <span class="bg-primary d-inline-block"></span>
                                             <span class="bg-secondary d-inline-block ml-2"></span>
@@ -208,18 +180,17 @@
                                 <div class="icon mr-2">
                                     <img src="images/Icons/kids.png" alt="">
                                 </div>
-                                <div class="content">
-                                    <h4 class="text-dark">Growth Tracker
+                                <div class="content d-flex flex-column">
+                                    <h4 class="text-dark text-uppercase">Growth Tracker
                                     </h4>
-                                    <span class="underline-mark d-inline-block">
+                                    <span class="underline-mark d-inline-block my-1">
                                         <span class="inner-line d-inline-block d-flex align-items-center">
                                             <span class="bg-primary d-inline-block"></span>
                                             <span class="bg-secondary d-inline-block ml-2"></span>
                                         </span>
                                     </span>
                                     <p class="mb-0"> Track your kid's Height, Weight and other important parameters as
-                                        well as
-                                        compare...
+                                        well as compare...
                                     </p>
                                 </div>
                             </li>
@@ -227,10 +198,10 @@
                                 <div class="icon mr-2">
                                     <img src="images/Icons/document.png" alt="">
                                 </div>
-                                <div class="content">
-                                    <h4 class="text-dark">My Documents
+                                <div class="content d-flex flex-column">
+                                    <h4 class="text-dark text-uppercase">My Documents
                                     </h4>
-                                    <span class="underline-mark d-inline-block">
+                                    <span class="underline-mark d-inline-block my-1">
                                         <span class="inner-line d-inline-block d-flex align-items-center">
                                             <span class="bg-primary d-inline-block"></span>
                                             <span class="bg-secondary d-inline-block ml-2"></span>
@@ -241,6 +212,24 @@
                                     </p>
                                 </div>
                             </li>
+                            <li class="d-flex item align-items-center">
+                                <div class="icon mr-2">
+                                    <img src="images/Icons/neak.png" alt="">
+                                </div>
+                                <div class="content d-flex flex-column">
+                                    <h4 class="text-dark text-uppercase"> DIAPER TRACKER </h4>
+                                    <span class="underline-mark d-inline-block my-1">
+                                        <span class="inner-line d-inline-block d-flex align-items-center">
+                                            <span class="bg-primary d-inline-block"></span>
+                                            <span class="bg-secondary d-inline-block ml-2"></span>
+                                        </span>
+                                    </span>
+                                    <p class="mb-0"> Track-order-repeat. Never run out of your diapers & manage your
+                                        expense with...
+                                    </p>
+                                </div>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -248,8 +237,12 @@
                     <div class="slider-for">
                         <!-- banner right -->
                         <div class="banner-right-content position-relative">
-                            <img src="images/Icons/neak.png" alt="" class="floating-icon-1 position-absolute">
-                            <img src="images/Icons/vaccine.png" alt="" class="floating-icon-2 position-absolute">
+                            <img src="images/Icons/document.png" alt="" class="floating-icon-1 position-absolute">
+
+                            <div class="floating-icon-2 position-absolute bg-white p-3 rounded-circle"> <img
+                                    src="images/Icons/daiper-tracker.png" alt="daiper-tracker" />
+                                <p class="mb-0 fs-12 font-weight-bold">Daiper Tracker</p>
+                            </div>
                             <img src="images/Icons/kids.png" alt="" class="floating-icon-3 position-absolute">
 
                             <div class="inner-content  pr-lg-3 text-lg-right text-center">
@@ -261,7 +254,7 @@
                                     vaccinations and maintain safe online records.
 
                                 </p>
-                                <a href="#" class="btn btn-outline-secondary rounded-pill">read more</a>
+                                <a href="#" class="btn btn-white rounded-pill">read more</a>
                                 <div class="banner-img d-none d-lg-block">
                                     <img src="images/Vaccination Tracker.png" class="d-inline-block" alt="">
                                 </div>
@@ -272,7 +265,10 @@
                         <!-- banner right -->
                         <div class="banner-right-content position-relative">
                             <img src="images/Icons/neak.png" alt="" class="floating-icon-1 position-absolute">
-                            <img src="images/Icons/vaccine.png" alt="" class="floating-icon-2 position-absolute">
+                            <div class="floating-icon-2 position-absolute bg-white p-3 rounded-circle">
+                                <img src="images/Icons/vaccine-tracker.png" alt="vaccine-tracker" />
+                                <p class="mb-0 fs-12 font-weight-bold">Vaccination Tracker</p>
+                            </div>
                             <img src="images/Icons/kids.png" alt="" class="floating-icon-3 position-absolute">
 
                             <div class="inner-content  pr-lg-3 text-lg-right text-center">
@@ -284,7 +280,7 @@
                                     vaccinations and maintain safe online records.
 
                                 </p>
-                                <a href="#" class="btn btn-outline-secondary rounded-pill">read more</a>
+                                <a href="#" class="btn btn-white rounded-pill">read more</a>
                                 <div class="banner-img d-none d-lg-block">
                                     <img src="images/Vaccination Tracker.png" class="d-inline-block" alt="">
                                 </div>
@@ -293,9 +289,12 @@
                         <!-- banner right -->
                         <!-- banner right -->
                         <div class="banner-right-content position-relative">
-                            <img src="images/Icons/neak.png" alt="" class="floating-icon-1 position-absolute">
-                            <img src="images/Icons/vaccine.png" alt="" class="floating-icon-2 position-absolute">
-                            <img src="images/Icons/kids.png" alt="" class="floating-icon-3 position-absolute">
+                            <img src="images/Icons/vaccine.png" alt="" class="floating-icon-1 position-absolute">
+                            <div class="floating-icon-2 position-absolute bg-white p-3 rounded-circle">
+                                <img src="images/Icons/growth-tracker.png" alt="Growth-tracker" />
+                                <p class="mb-0 fs-12 font-weight-bold">Growth Tracker</p>
+                            </div>
+                            <img src="images/Icons/document.png" alt="" class="floating-icon-3 position-absolute">
 
                             <div class="inner-content  pr-lg-3 text-lg-right text-center">
                                 <h1><span class="text-primary">Growth </span> <span
@@ -306,7 +305,7 @@
                                     vaccinations and maintain safe online records.
 
                                 </p>
-                                <a href="#" class="btn btn-outline-secondary rounded-pill">read more</a>
+                                <a href="#" class="btn btn-white rounded-pill">read more</a>
                                 <div class="banner-img d-none d-lg-block">
                                     <img src="images/Vaccination Tracker.png" class="d-inline-block" alt="">
                                 </div>
@@ -315,12 +314,38 @@
                         <!-- banner right -->
                         <!-- banner right -->
                         <div class="banner-right-content position-relative">
-                            <img src="images/Icons/neak.png" alt="" class="floating-icon-1 position-absolute">
-                            <img src="images/Icons/vaccine.png" alt="" class="floating-icon-2 position-absolute">
-                            <img src="images/Icons/kids.png" alt="" class="floating-icon-3 position-absolute">
+                            <img src="images/Icons/kids.png" alt="" class="floating-icon-1 position-absolute">
+                            <div class="floating-icon-2 position-absolute bg-white p-3 rounded-circle">
+                                <img src="images/Icons/my-document.png" alt="My-Documents" />
+                                <p class="mb-0 fs-12 font-weight-bold">My Documents</p>
+                            </div> <img src="images/Icons/neak.png" alt="" class="floating-icon-3 position-absolute">
 
                             <div class="inner-content  pr-lg-3 text-lg-right text-center">
                                 <h1><span class="text-primary">My </span> <span
+                                        class="ml-1 text-secondary">Documents</span>
+                                </h1>
+                                <p class="mb-3">Never forget Vaccination of your kids. Avail exciting benefit of booking
+                                    vaccine at home through our partner cloudnine (select cities only). Keep track of
+                                    vaccinations and maintain safe online records.
+
+                                </p>
+                                <a href="#" class="btn btn-white rounded-pill">read more</a>
+                                <div class="banner-img d-none d-lg-block">
+                                    <img src="images/Vaccination Tracker.png" class="d-inline-block" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- banner right -->
+                        <div class="banner-right-content position-relative">
+                            <img src="images/Icons/document.png" alt="" class="floating-icon-1 position-absolute">
+                            <div class="floating-icon-2 position-absolute bg-white p-3 rounded-circle"> <img
+                                    src="images/Icons/daiper-tracker.png" alt="daiper-tracker" />
+                                <p class="mb-0 fs-12 font-weight-bold">Daiper Tracker</p>
+                            </div>
+                            <img src="images/Icons/kids.png" alt="" class="floating-icon-3 position-absolute">
+
+                            <div class="inner-content  pr-lg-3 text-lg-right text-center">
+                                <h1><span class="text-primary">Daiper</span> <span
                                         class="ml-1 text-secondary">Tracker</span>
                                 </h1>
                                 <p class="mb-3">Never forget Vaccination of your kids. Avail exciting benefit of booking
@@ -328,13 +353,13 @@
                                     vaccinations and maintain safe online records.
 
                                 </p>
-                                <a href="#" class="btn btn-outline-secondary rounded-pill">read more</a>
+                                <a href="#" class="btn btn-white rounded-pill">read more</a>
                                 <div class="banner-img d-none d-lg-block">
                                     <img src="images/Vaccination Tracker.png" class="d-inline-block" alt="">
                                 </div>
                             </div>
                         </div>
-
+                        <!-- banner right -->
                     </div>
                 </div>
             </div>
@@ -343,7 +368,7 @@
 
 
     <!-- offer section  -->
-    <section id="OfferSection" data-aos="flip-left">
+    <section id="OfferSection" class="wow fadeInUp">
 
         <div id="offerSlider" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -374,9 +399,9 @@
     <!-- offer section ends  -->
 
     <!-- best services  -->
-    <section id="BestServices" class="py-5" data-aos="zoom-in">
+    <section id="BestServices" class="py-5 wow rollIn">
         <div class="container overflow-x-hidden ">
-            <div class="section-heading text-center pb-md-3 mb-5">
+            <div class="section-heading text-center mb-md-4">
                 <h4 class="mb-2 text-primary">OUR BEST SERVICES </h4>
                 <h2>LOREM IPSUM IS SIMPLY </h2>
             </div>
@@ -535,9 +560,9 @@
     </section>
 
     <!-- FAQ section  -->
-    <section id="FAQs" class="bg-light py-5">
-        <div class="container overflow-x-hidden ">
-            <div class="section-heading text-center   mb-5" data-aos="zoom-in-down">
+    <section id="FAQs" class="bg-light py-5  wow bounceInUp">
+        <div class="container overflow-x-hidden">
+            <div class="section-heading text-center wow backInDown">
                 <h4 class="mb-2 text-primary">FAQ'S </h4>
                 <h2 class="text-dark">HAVE QUESTIONS? ASK NOW!
                 </h2>
@@ -545,49 +570,52 @@
                 </p>
             </div>
             <div class="faq-list ">
-                <div class="row overflow-y-hidden">
-                    <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up">
+                <div class="row overflow-hidden">
+                    <div class="col-6 col-lg-3  wow lightSpeedInRight" data-wow-delay="0.5s">
                         <div class="faq-box bg-white pl-lg-4 p-3 rounded border border-secondary">
                             <div class="icon mb-3">
                                 <img src="images/Icons/parenting-video.png" alt="PARENTING VIDEOS">
                             </div>
                             <h5 class="mb-3">PARENTING VIDEOS</h5>
-                            <p>Curated personalised videos to help parents find solutions & make parenthood easier for
+                            <p class="mb-0">Curated personalised videos to help parents find solutions & make parenthood
+                                easier for
                                 you.
                             </p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-6 col-lg-3   wow lightSpeedInRight" data-wow-delay="0.8s">
                         <div class="faq-box bg-white pl-lg-4 p-3 rounded border border-secondary">
                             <div class="icon mb-3">
                                 <img src="images/Icons/Moments_.png" alt="MOMENTS">
                             </div>
                             <h5 class="mb-3">MOMENTS</h5>
-                            <p>Capture lively moments of your kid & share with family (private mode) or the world
+                            <p class="mb-0">Capture lively moments of your kid & share with family (private mode) or the
+                                world
                                 (Public mode) to never miss the journey. Upload pictures or videos.
 
                             </p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="150">
+                    <div class="col-6 col-lg-3  wow lightSpeedInRight" data-wow-delay="1s">
                         <div class="faq-box bg-white pl-lg-4 p-3 rounded border border-secondary">
                             <div class="icon mb-3">
                                 <img src="images/Icons/Reminders.png" alt="REMINDERS">
                             </div>
                             <h5 class="mb-3">REMINDERS </h5>
-                            <p>Want to track and create tasks for things to do? Get all your reminders set at one
+                            <p class="mb-0">Want to track and create tasks for things to do? Get all your reminders set
+                                at one
                                 platform & guess what, the tool can remind/notify both the parents.
 
                             </p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-6 col-lg-3  wow lightSpeedInRight" data-wow-delay="1.2s">
                         <div class="faq-box bg-white pl-lg-4 p-3 rounded border border-secondary">
                             <div class="icon mb-3">
-                                <img src="images/Icons/parenting-video.png" alt="QUIZ">
+                                <img src="images/Icons/Quiz_.png" alt="QUIZ">
                             </div>
                             <h5 class="mb-3">QUIZ</h5>
-                            <p>Play weekly quiz and get a chance to win Flipkart voucher worth Rs 500.
+                            <p class="mb-0">Play weekly quiz and get a chance to win Flipkart voucher worth Rs 500.
 
                             </p>
                         </div>
@@ -599,21 +627,22 @@
     <!-- FAQ section Ends -->
 
     <!-- blogs section  -->
-    <section id="Blogs" class="py-5">
-        <div class="container overflow-x-hidden">
-            <div class="section-heading text-center mb-5" data-aos="zoom-in-down">
+    <section id="Blogs" class="py-5  wow bounceInUp">
+        <div class="container overflow-x-hidden pb-2">
+            <div class="section-heading text-center mb-md-4 wow backInDown">
                 <h4 class="mb-2 text-primary">HOW PINKNBLU </h4>
                 <h2 class="text-dark">HELPING FOR MORE THEN PARENTING? </h2>
             </div>
-            <div class="blogs-list">
+            <div class="blogs-list ">
                 <div class="row overflow-y-hidden pb-4">
-                    <div class="col-md-4 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-md-4 mb-5 mb-md-0 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="blog-box">
                             <div class="blog-img">
-                                <img src="images/help-1.png" class="w-100" alt="blog img">
+                                <a href="#"> <img src="images/help-1.png" class="w-100" alt="blog img"></a>
                             </div>
                             <div class="blog-content text-center bg-white p-3 pl-lg-4 shadow">
-                                <h5 class="fs-18 text-dark">Travelling With Kids During Covid-19
+                                <h5 class="fs-18">
+                                    <a href="#" class="text-dark">Travelling With Kids During Covid-19</a>
                                 </h5>
                                 <p>For more than 11 months now, the world has seen a monumental shift in the natural
                                     course of life and experience of basic things like...
@@ -624,13 +653,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="150">
+                    <div class="col-md-4 mb-5 mb-md-0  wow fadeInUp" data-wow-delay="0.8s">
                         <div class="blog-box">
                             <div class="blog-img">
-                                <img src="images/help-2.png" class="w-100" alt="blog img">
+                                <a href="#"> <img src="images/help-2.png" class="w-100" alt="blog img"></a>
                             </div>
                             <div class="blog-content text-center bg-white p-3 pl-lg-4 shadow">
-                                <h5 class="fs-18 text-dark">6 Common Mistakes Preventing Sound Sleep In Babies
+                                <h5 class="fs-18"> <a href="#" class="text-dark">6 Common Mistakes Preventing Sound
+                                        Sleep In Babies</a>
                                 </h5>
                                 <p>Everyone is aware of the miraculous benefits of a good night's sleep on one's
                                     health...
@@ -641,19 +671,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-md-4  wow fadeInUp" data-wow-delay="1s">
                         <div class="blog-box">
                             <div class="blog-img">
-                                <img src="images/help-3.png" class="w-100" alt="blog img">
+                                <a href="#"><img src="images/help-3.png" class="w-100" alt="blog img"></a>
                             </div>
                             <div class="blog-content text-center bg-white p-3 pl-lg-4 shadow">
-                                <h5 class="fs-18 text-dark">Postpartum Depression (ppd) - Understanding Its Causes,
-                                    Symptoms..
+                                <h5 class="fs-18"><a href="#" class="text-dark">Postpartum Depression (ppd) -
+                                        Understanding Its Causes,
+                                        Symptoms..</a>
                                 </h5>
                                 <p>Out of the innumerable things that evolve around a new mother, we want to discuss
-                                    a...
-
-                                </p>
+                                    a... </p>
                                 <a href="#" class="text-secondary text-underline text-uppercase">View More</a>
 
                             </div>
@@ -661,7 +690,7 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-5">
+            <div class="text-center mt-4 mt-md-5 pb-2">
                 <a href="#" class="btn btn-outline-primary rounded-pill">View all blogs</a>
             </div>
         </div>
@@ -669,13 +698,13 @@
     <!-- blogs section Ends -->
 
     <!-- Our Videos  -->
-    <section id="MedicalCare" class="py-5">
+    <section id="MedicalCare" class="pb-5">
         <div class="container  overflow-x-hidden">
             <!-- custom tabs -->
             <div class="custom-tabs">
                 <div class="row">
                     <div class="col-md-5">
-                        <div class="section-heading text-center text-md-left " data-aos="zoom-in-down">
+                        <div class="section-heading text-center text-md-left wow backInDown">
                             <h4 class="mb-2 text-primary">OUR VIDEOS</h4>
                             <h2 class="text-dark">MEDICAL CARE</h2>
                             <p class="fs-18">We offers a variety of live online courses for kids
@@ -694,23 +723,23 @@
                                 data-target="#SocialVideos">
                                 Social
                             </li>
-                            <li class="py-2 px-3 px-lg-4 rounded-pill" data-target="#RoutingVideos">
+                            <li class="rounded-pill" data-target="#RoutingVideos">
                                 Routing
                             </li>
-                            <li class="py-2 px-3 px-lg-4 rounded-pill" data-target="#SchoolVideos">
+                            <li class="rounded-pill" data-target="#SchoolVideos">
                                 School
                             </li>
-                            <li class="py-2 px-3 px-lg-4 rounded-pill" data-target="#StoryVideos">
+                            <li class="rounded-pill" data-target="#StoryVideos">
                                 story
                             </li>
-                            <li class="py-2 px-3 px-lg-4 rounded-pill" data-target="#YogaVideos">
+                            <li class="rounded-pill" data-target="#YogaVideos">
                                 Yoga Pose
                             </li>
                         </ul>
                     </div>
                     <!-- custom tabs ends -->
 
-                    <div class="col-md-12 mt-5" data-aos="fade-left">
+                    <div class="col-md-12 mt-5 wow fadeInRight">
                         <!-- tabs list ends-->
                         <div class="tab-content active" id="SocialVideos">
                             <div class="row">
@@ -729,14 +758,16 @@
                                         </div>
                                         <div class="content p-3">
 
-                                            <h6 class="mb-2 text-dark">ONLINE COURSE FOR KIDS
+                                            <h6 class="mb-2">
+                                                <a href="#" class="text-dark">
+                                                    ONLINE COURSE FOR KIDS</a>
                                             </h6>
                                             <ul class="video-stats d-flex align-items-center font-weight-bold">
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <!-- add text-secondary class to high light  -->
                                                     <span class="far fa-thumbs-up text-secondary"></span> 2570
                                                 </li>
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <!-- add text-secondary class to high light  -->
                                                     <span class="far fa-eye text-secondary"></span>
                                                     70
@@ -769,14 +800,16 @@
                                             </div>
                                         </div>
                                         <div class="content p-3">
-                                            <h6 class="mb-2 text-dark">ONLINE COURSE FOR KIDS
+                                            <h6 class="mb-2">
+                                                <a href="#" class="text-dark">
+                                                    ONLINE COURSE FOR KIDS</a>
                                             </h6>
                                             <ul class="video-stats d-flex align-items-center font-weight-bold">
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-thumbs-up "></span>
                                                     2570
                                                 </li>
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-eye "></span>
                                                     70
                                                 </li>
@@ -807,14 +840,16 @@
                                             </div>
                                         </div>
                                         <div class="content p-3">
-                                            <h6 class="mb-2 text-dark">ONLINE COURSE FOR KIDS
+                                            <h6 class="mb-2">
+                                                <a href="#" class="text-dark">
+                                                    ONLINE COURSE FOR KIDS</a>
                                             </h6>
                                             <ul class="video-stats d-flex align-items-center font-weight-bold">
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-thumbs-up "></span>
                                                     2570
                                                 </li>
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-eye "></span>
                                                     70
                                                 </li>
@@ -845,14 +880,16 @@
                                             </div>
                                         </div>
                                         <div class="content p-3">
-                                            <h6 class="mb-2 text-dark">ONLINE COURSE FOR KIDS
+                                            <h6 class="mb-2">
+                                                <a href="#" class="text-dark">
+                                                    ONLINE COURSE FOR KIDS</a>
                                             </h6>
                                             <ul class="video-stats d-flex align-items-center font-weight-bold">
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-thumbs-up "></span>
                                                     2570
                                                 </li>
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-eye "></span>
                                                     70
                                                 </li>
@@ -887,14 +924,16 @@
                                             </div>
                                         </div>
                                         <div class="content p-3">
-                                            <h6 class="mb-2 text-dark">ONLINE COURSE FOR KIDS
+                                            <h6 class="mb-2">
+                                                <a href="#" class="text-dark">
+                                                    ONLINE COURSE FOR KIDS</a>
                                             </h6>
                                             <ul class="video-stats d-flex align-items-center font-weight-bold">
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-thumbs-up "></span>
                                                     2570
                                                 </li>
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-eye "></span>
                                                     70
                                                 </li>
@@ -925,14 +964,16 @@
                                             </div>
                                         </div>
                                         <div class="content p-3">
-                                            <h6 class="mb-2 text-dark">ONLINE COURSE FOR KIDS
+                                            <h6 class="mb-2">
+                                                <a href="#" class="text-dark">
+                                                    ONLINE COURSE FOR KIDS</a>
                                             </h6>
                                             <ul class="video-stats d-flex align-items-center font-weight-bold">
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-thumbs-up "></span>
                                                     2570
                                                 </li>
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-eye "></span>
                                                     70
                                                 </li>
@@ -963,14 +1004,16 @@
                                             </div>
                                         </div>
                                         <div class="content p-3">
-                                            <h6 class="mb-2 text-dark">ONLINE COURSE FOR KIDS
+                                            <h6 class="mb-2">
+                                                <a href="#" class="text-dark">
+                                                    ONLINE COURSE FOR KIDS</a>
                                             </h6>
                                             <ul class="video-stats d-flex align-items-center font-weight-bold">
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-thumbs-up "></span>
                                                     2570
                                                 </li>
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-eye "></span>
                                                     70
                                                 </li>
@@ -1001,14 +1044,16 @@
                                             </div>
                                         </div>
                                         <div class="content p-3">
-                                            <h6 class="mb-2 text-dark">ONLINE COURSE FOR KIDS
+                                            <h6 class="mb-2">
+                                                <a href="#" class="text-dark">
+                                                    ONLINE COURSE FOR KIDS</a>
                                             </h6>
                                             <ul class="video-stats d-flex align-items-center font-weight-bold">
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-thumbs-up "></span>
                                                     2570
                                                 </li>
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-eye "></span>
                                                     70
                                                 </li>
@@ -1044,14 +1089,16 @@
                                             </div>
                                         </div>
                                         <div class="content p-3">
-                                            <h6 class="mb-2 text-dark">ONLINE COURSE FOR KIDS
+                                            <h6 class="mb-2">
+                                                <a href="#" class="text-dark">
+                                                    ONLINE COURSE FOR KIDS</a>
                                             </h6>
                                             <ul class="video-stats d-flex align-items-center font-weight-bold">
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-thumbs-up "></span>
                                                     2570
                                                 </li>
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-eye "></span>
                                                     70
                                                 </li>
@@ -1082,14 +1129,16 @@
                                             </div>
                                         </div>
                                         <div class="content p-3">
-                                            <h6 class="mb-2 text-dark">ONLINE COURSE FOR KIDS
+                                            <h6 class="mb-2">
+                                                <a href="#" class="text-dark">
+                                                    ONLINE COURSE FOR KIDS</a>
                                             </h6>
                                             <ul class="video-stats d-flex align-items-center font-weight-bold">
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-thumbs-up "></span>
                                                     2570
                                                 </li>
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-eye "></span>
                                                     70
                                                 </li>
@@ -1120,14 +1169,16 @@
                                             </div>
                                         </div>
                                         <div class="content p-3">
-                                            <h6 class="mb-2 text-dark">ONLINE COURSE FOR KIDS
+                                            <h6 class="mb-2">
+                                                <a href="#" class="text-dark">
+                                                    ONLINE COURSE FOR KIDS</a>
                                             </h6>
                                             <ul class="video-stats d-flex align-items-center font-weight-bold">
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-thumbs-up "></span>
                                                     2570
                                                 </li>
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-eye "></span>
                                                     70
                                                 </li>
@@ -1158,14 +1209,16 @@
                                             </div>
                                         </div>
                                         <div class="content p-3">
-                                            <h6 class="mb-2 text-dark">ONLINE COURSE FOR KIDS
+                                            <h6 class="mb-2">
+                                                <a href="#" class="text-dark">
+                                                    ONLINE COURSE FOR KIDS</a>
                                             </h6>
                                             <ul class="video-stats d-flex align-items-center font-weight-bold">
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-thumbs-up "></span>
                                                     2570
                                                 </li>
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-eye "></span>
                                                     70
                                                 </li>
@@ -1201,14 +1254,16 @@
                                             </div>
                                         </div>
                                         <div class="content p-3">
-                                            <h6 class="mb-2 text-dark">ONLINE COURSE FOR KIDS
+                                            <h6 class="mb-2">
+                                                <a href="#" class="text-dark">
+                                                    ONLINE COURSE FOR KIDS</a>
                                             </h6>
                                             <ul class="video-stats d-flex align-items-center font-weight-bold">
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-thumbs-up "></span>
                                                     2570
                                                 </li>
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-eye "></span>
                                                     70
                                                 </li>
@@ -1239,14 +1294,16 @@
                                             </div>
                                         </div>
                                         <div class="content p-3">
-                                            <h6 class="mb-2 text-dark">ONLINE COURSE FOR KIDS
+                                            <h6 class="mb-2">
+                                                <a href="#" class="text-dark">
+                                                    ONLINE COURSE FOR KIDS</a>
                                             </h6>
                                             <ul class="video-stats d-flex align-items-center font-weight-bold">
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-thumbs-up "></span>
                                                     2570
                                                 </li>
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-eye "></span>
                                                     70
                                                 </li>
@@ -1277,14 +1334,16 @@
                                             </div>
                                         </div>
                                         <div class="content p-3">
-                                            <h6 class="mb-2 text-dark">ONLINE COURSE FOR KIDS
+                                            <h6 class="mb-2">
+                                                <a href="#" class="text-dark">
+                                                    ONLINE COURSE FOR KIDS</a>
                                             </h6>
                                             <ul class="video-stats d-flex align-items-center font-weight-bold">
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-thumbs-up "></span>
                                                     2570
                                                 </li>
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-eye "></span>
                                                     70
                                                 </li>
@@ -1315,14 +1374,16 @@
                                             </div>
                                         </div>
                                         <div class="content p-3">
-                                            <h6 class="mb-2 text-dark">ONLINE COURSE FOR KIDS
+                                            <h6 class="mb-2">
+                                                <a href="#" class="text-dark">
+                                                    ONLINE COURSE FOR KIDS</a>
                                             </h6>
                                             <ul class="video-stats d-flex align-items-center font-weight-bold">
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-thumbs-up "></span>
                                                     2570
                                                 </li>
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-eye "></span>
                                                     70
                                                 </li>
@@ -1357,14 +1418,16 @@
                                             </div>
                                         </div>
                                         <div class="content p-3">
-                                            <h6 class="mb-2 text-dark">ONLINE COURSE FOR KIDS
+                                            <h6 class="mb-2">
+                                                <a href="#" class="text-dark">
+                                                    ONLINE COURSE FOR KIDS</a>
                                             </h6>
                                             <ul class="video-stats d-flex align-items-center font-weight-bold">
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-thumbs-up "></span>
                                                     2570
                                                 </li>
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-eye "></span>
                                                     70
                                                 </li>
@@ -1395,14 +1458,16 @@
                                             </div>
                                         </div>
                                         <div class="content p-3">
-                                            <h6 class="mb-2 text-dark">ONLINE COURSE FOR KIDS
+                                            <h6 class="mb-2">
+                                                <a href="#" class="text-dark">
+                                                    ONLINE COURSE FOR KIDS</a>
                                             </h6>
                                             <ul class="video-stats d-flex align-items-center font-weight-bold">
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-thumbs-up "></span>
                                                     2570
                                                 </li>
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-eye "></span>
                                                     70
                                                 </li>
@@ -1433,14 +1498,16 @@
                                             </div>
                                         </div>
                                         <div class="content p-3">
-                                            <h6 class="mb-2 text-dark">ONLINE COURSE FOR KIDS
+                                            <h6 class="mb-2">
+                                                <a href="#" class="text-dark">
+                                                    ONLINE COURSE FOR KIDS</a>
                                             </h6>
                                             <ul class="video-stats d-flex align-items-center font-weight-bold">
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-thumbs-up "></span>
                                                     2570
                                                 </li>
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-eye "></span>
                                                     70
                                                 </li>
@@ -1471,14 +1538,16 @@
                                             </div>
                                         </div>
                                         <div class="content p-3">
-                                            <h6 class="mb-2 text-dark">ONLINE COURSE FOR KIDS
+                                            <h6 class="mb-2">
+                                                <a href="#" class="text-dark">
+                                                    ONLINE COURSE FOR KIDS</a>
                                             </h6>
                                             <ul class="video-stats d-flex align-items-center font-weight-bold">
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-thumbs-up "></span>
                                                     2570
                                                 </li>
-                                                <li class="mr-1">
+                                                <li class="mr-3">
                                                     <span class="far fa-eye "></span>
                                                     70
                                                 </li>
@@ -1498,7 +1567,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="text-center col-12 mt-5">
+                    <div class="text-center col-12 mt-4 mt-md-5 pb-2">
                         <a href="#" class="btn btn-outline-primary rounded-pill">View all videos</a>
                     </div>
                 </div>
@@ -1511,7 +1580,7 @@
     <section id="kidcoin" class="bg-light-pink">
         <div class="container  overflow-x-hidden">
             <div class="row align-items-center">
-                <div class="col-md-6 py-3" data-aos="fade-right">
+                <div class="col-md-6 py-3 wow fadeInRight">
                     <div class="section-heading text-center text-md-left">
                         <h4 class="mb-2 text-primary">KIDCOINS</h4>
                         <h2 class="text-dark">SHOP NEW & EARN KIDCOINS </h2>
@@ -1524,7 +1593,7 @@
 
                     </p>
                 </div>
-                <div class="col-md-6" data-aos="fade-left">
+                <div class="col-md-6 wow fadeInLeft">
                     <img src="images/kid-coins-banner.png" alt="kid-coins-banner" class="diplay-img">
                 </div>
             </div>
@@ -1536,7 +1605,7 @@
     <section id="Testimonials" class="py-5">
         <div class="container  overflow-x-hidden">
 
-            <div class="section-heading text-center  mb-5" data-aos="zoom-in-down">
+            <div class="section-heading text-center mb-4 mb-md-5 wow backInDown">
                 <h4 class="mb-2 text-primary">TESTIMONIALS </h4>
                 <h2 class="text-dark">WHAT PARENT SAY ABOUT US?</h2>
             </div>
@@ -1544,7 +1613,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <!-- testimonials box  -->
-                        <div class="testimonial-box text-center" data-aos="flip-up">
+                        <div class="testimonial-box text-center wow fadeInUp">
                             <div class="user-img mb-3 ">
                                 <img src="images/Icons/Testimonials.png" alt="user img">
                             </div>
@@ -1573,7 +1642,7 @@
                     </div>
                     <div class="carousel-item">
                         <!-- testimonials box  -->
-                        <div class="testimonial-box text-center" data-aos="flip-up">
+                        <div class="testimonial-box text-center wow fadeInUp">
                             <div class="user-img mb-3 ">
                                 <img src="images/Icons/Testimonials.png" alt="user img">
                             </div>
@@ -1601,7 +1670,7 @@
                     </div>
                     <div class="carousel-item">
                         <!-- testimonials box  -->
-                        <div class="testimonial-box text-center" data-aos="flip-up">
+                        <div class="testimonial-box text-center wow fadeInUp">
                             <div class="user-img mb-3 ">
                                 <img src="images/Icons/Testimonials.png" alt="user img">
                             </div>
@@ -1633,16 +1702,16 @@
                 <div class="controls-wrapper">
                     <a class="carousel-control-prev" href="#testimonialSlider" role="button" data-slide="prev">
                         <i class="fas fa-angle-left"></i>
-    
+
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#testimonialSlider" role="button" data-slide="next">
                         <i class="fas fa-angle-right"></i>
-    
+
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-               
+
             </div>
         </div>
     </section>
@@ -1650,7 +1719,7 @@
     <!-- Pricing features  -->
     <section id="Pricing" class="bg-light py-5">
         <div class="container  overflow-x-hidden">
-            <div class="section-heading text-center mb-5">
+            <div class="section-heading text-center mb-4 mb-md-5  wow backInDown">
                 <h4 class="mb-2 text-primary">ACTIVITY FEATURE </h4>
                 <h2 class="text-dark">DISCOVER YOUR CHILD'S HIDDEN TREASURES
                 </h2>
@@ -1659,10 +1728,13 @@
                     & Dance classes for kids between the ages 4-14 years!</p>
             </div>
             <div class="pricing-list">
-                <div class="row">
-                    <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-right" data-aos-delay="200">
+                <div class="row overflow-y-hidden">
+                    <div class="col-md-4 mb-4 mb-md-0 wow fadeInUp" data-wow-delay="0.5s">
                         <!-- pricing box  -->
                         <div class="pricing-box position-relative text-dark py-3">
+                            <span class="brand-icon">
+                                <img src="images/Icons/google-logo.png" alt="google logo">
+                            </span>
                             <div class="img">
                                 <img src="images/pricing-1.png" alt="pricing">
                             </div>
@@ -1702,9 +1774,11 @@
                         <!-- pricing box  -->
 
                     </div>
-                    <div class="col-md-4  mb-4 mb-md-0" data-aos="fade-right" data-aos-delay="400">
+                    <div class="col-md-4  mb-4 mb-md-0 wow fadeInUp" data-wow-delay="0.8s">
                         <!-- pricing box  -->
-                        <div class="pricing-box position-relative text-dark py-3">
+                        <div class="pricing-box position-relative text-dark py-3"> <span class="brand-icon">
+                                <img src="images/Icons/google-logo.png" alt="google logo">
+                            </span>
                             <div class="img">
                                 <img src="images/pricing-2.png" alt="pricing">
                             </div>
@@ -1744,9 +1818,12 @@
                         <!-- pricing box  -->
 
                     </div>
-                    <div class="col-md-4  mb-4 mb-md-0" data-aos="fade-right" data-aos-delay="600">
+                    <div class="col-md-4  mb-4 mb-md-0 wow fadeInUp" data-wow-delay="1s">
                         <!-- pricing box  -->
                         <div class="pricing-box position-relative text-dark py-3">
+                            <span class="brand-icon">
+                                <img src="images/Icons/google-logo.png" alt="google logo">
+                            </span>
                             <div class="img">
                                 <img src="images/pricing-3.png" alt="pricing">
                             </div>
@@ -1786,7 +1863,7 @@
                         <!-- pricing box  -->
 
                     </div>
-                    <div class="col-12 mt-5 text-center">
+                    <div class="col-12 mt-4 mt-md-5 text-center pb-2">
                         <a href="#" class="btn btn-outline-primary rounded-pill">View All activity</a>
                     </div>
                 </div>
@@ -1798,15 +1875,15 @@
     <!-- Moment section -->
     <section id="Moments" class="py-5">
         <div class="container  overflow-x-hidden">
-            <div class="section-heading text-center  mb-5" data-aos="zoom-in">
+            <div class="section-heading text-center mb-4 mb-md-5 wow backInDown">
                 <h4 class="mb-2 text-primary">MOMENTS </h4>
                 <h2 class="text-dark">MILLIONS OF SUCCESS STORIES </h2>
                 <p class="fs-18">Ask questions to like minded parents & get answers from their experiences.</p>
             </div>
             <div class="row">
-                <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="col-6 col-lg-3  ">
                     <!-- moment-box -->
-                    <div class="moment-box position-relative">
+                    <div class="moment-box position-relative wow fadeInDown" data-wow-delay="0.5s">
                         <img class="display-img w-100" src="images/moments-1.png" alt="moments">
                         <div class="overlay position-absolute d-flex align-items-center justify-content-center">
                             <a href="#" class="btn btn-outline-light rounded-pill rounded-pill">View all images</a>
@@ -1825,9 +1902,9 @@
                     </div>
                     <!-- moment-box -->
                 </div>
-                <div class="col-6 col-lg-3 mb-4 mb-lg-0" data-aos="zoom-in">
+                <div class="col-6 col-lg-3  ">
                     <!-- moment-box -->
-                    <div class="moment-box position-relative">
+                    <div class="moment-box position-relative wow fadeInDown" data-wow-delay="0.8s">
                         <img class="display-img w-100" src="images/moments-2.png" alt="moments">
                         <div class="overlay position-absolute d-flex align-items-center justify-content-center">
                             <a href="#" class="btn btn-outline-light rounded-pill rounded-pill">View all images</a>
@@ -1843,9 +1920,9 @@
                     </div>
                     <!-- moment-box -->
                 </div>
-                <div class="col-6 col-lg-3 mb-4 mb-lg-0" data-aos="zoom-in">
+                <div class="col-6 col-lg-3  ">
                     <!-- moment-box -->
-                    <div class="moment-box position-relative">
+                    <div class="moment-box position-relative wow fadeInDown" data-wow-delay="01s">
                         <img class="display-img w-100" src="images/moments-3.png" alt="moments">
                         <div class="overlay position-absolute d-flex align-items-center justify-content-center">
                             <a href="#" class="btn btn-outline-light rounded-pill rounded-pill">View all images</a>
@@ -1861,9 +1938,9 @@
                     </div>
                     <!-- moment-box -->
                 </div>
-                <div class="col-6 col-lg-3 mb-4 mb-lg-0" data-aos="zoom-in">
+                <div class="col-6 col-lg-3  ">
                     <!-- moment-box -->
-                    <div class="moment-box position-relative">
+                    <div class="moment-box position-relative wow fadeInDown" data-wow-delay="1.2s">
                         <img class="display-img w-100" src="images/moments-4.png" alt="moments">
                         <div class="overlay position-absolute d-flex align-items-center justify-content-center">
                             <a href="#" class="btn btn-outline-light rounded-pill rounded-pill">View all images</a>
@@ -1879,6 +1956,9 @@
                     </div>
                     <!-- moment-box -->
                 </div>
+                <div class="col-12 mt-4 mt-md-5 text-center pb-2">
+                    <a href="#" class="btn btn-outline-primary rounded-pill">View All moments</a>
+                </div>
             </div>
         </div>
     </section>
@@ -1888,7 +1968,7 @@
     <section id="AppInfo" class="bg-light-pink">
         <div class="container  overflow-x-hidden">
             <div class="row align-items-center text-center text-md-left">
-                <div class="col-md-6" data-aos="fade-right">
+                <div class="col-md-6 wow fadeInRight">
                     <div class="section-heading py-3">
                         <h2 class="fs-40  mb-2 font-weight-bolder text-primary">LOREM IPSUM IS SIMPLY
                         </h2>
@@ -1896,13 +1976,18 @@
                             sed do
                             eiusmod tempor incididunt ut
                             labore et</p>
-                        <a href="#" class="btn btn-secondary rounded-pill"> DOWNLOAD PINKNBLU APP
+                        <a href="#" class="btn btn-secondary rounded-pill d-none d-md-inline-block"> DOWNLOAD PINKNBLU
+                            APP
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6" data-aos="fade-left">
+                <div class="col-md-6 wow fadeInLeft">
                     <div class="pt-4">
-                        <img src="images/download-app.png" alt="download-app">
+                        <img class="d-none d-md-inline-block" src="images/download-app.png" alt="download-app">
+                        <a href="#" class="d-md-none">
+                            <img src="images/download-app-mob.png" alt="download-app">
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -1911,32 +1996,33 @@
     <!-- app Info  Ends-->
 
     <!-- questions & answers -->
-    <section id="QandA" class="py-5">
+    <section id="QandA" class="pt-5 pb-4">
         <div class="container overflow-x-hidden ">
-            <div class="section-heading text-center pb-md-5 mb-5">
+            <div class="section-heading text-center mb-4 mb-md-5 wow backInDown">
                 <h4 class="mb-2 text-primary">Q & A </h4>
                 <h2 class="text-dark">ASK QUESTIONS FOR ME
                 </h2>
             </div>
             <div class="questions-list">
                 <div class="row">
-                    <div class="col-md-6" data-aos="flip-right">
+                    <div class="col-md-6 wow flipInX">
                         <div class="question-box d-flex mb-3">
                             <div class="icon mr-3">
                                 <img src="images/Icons/question.png" alt="question">
                             </div>
                             <div class="content">
-                                <h5 class="font-weight-semi">Lorem Ipsum is simply dummy text of the printing ?
-                                </h5>
+                                <h5 class="font-weight-semi"><a href="#" class="text-dark">Lorem Ipsum is simply dummy
+                                        text of the printing ?</a></h5>
                                 <p>Lorem Ipsum is simply dummy text of the printing & typesetting industry. Lorem Ipsum
                                     has been the industry's standard dummy.
 
                                 </p>
                                 <div class="meta border-top py-2 d-flex align-items-center justify-content-between">
                                     <div class="stats fs-15 font-weight-bold">
-                                        <span class="mr-3 cursor-pointer"><i
-                                                class="far fa-thumbs-up text-secondary"></i>2570</span>
-                                        <span class="cursor-pointer"><span class="far fa-eye text-secondary"> </span>
+                                        <span class="mr-2 cursor-pointer"><i
+                                                class="far fa-thumbs-up text-secondary mr-2"></i>2570</span>
+                                        <span class="cursor-pointer"><span class="far fa-eye text-secondary mr-1">
+                                            </span>
                                             25</span>
                                     </div>
                                     <div class="action">
@@ -1946,22 +2032,26 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6" data-aos="flip-right">
+                    <div class="col-md-6 wow flipInX">
                         <div class="question-box d-flex mb-3">
                             <div class="icon mr-3">
                                 <img src="images/Icons/question.png" alt="question">
                             </div>
                             <div class="content">
-                                <h5 class="font-weight-semi">Lorem Ipsum is simply dummy text of the printing ?
-                                </h5>
+                                <h5 class="font-weight-semi"><a href="#" class="text-dark">Lorem Ipsum is simply dummy
+                                        text of the printing ?</a></h5>
+
                                 <p>Lorem Ipsum is simply dummy text of the printing & typesetting industry. Lorem Ipsum
                                     has been the industry's standard dummy.
 
                                 </p>
                                 <div class="meta border-top py-2 d-flex align-items-center justify-content-between">
                                     <div class="stats fs-15 font-weight-bold">
-                                        <span class="mr-3 cursor-pointer"><i class="far fa-thumbs-up"></i>2570</span>
-                                        <span class="cursor-pointer"><span class="far fa-eye"> </span> 25</span>
+                                        <span class="mr-2 cursor-pointer"><i
+                                                class="far fa-thumbs-up text-secondary mr-2"></i>2570</span>
+                                        <span class="cursor-pointer"><span class="far fa-eye text-secondary mr-1">
+                                            </span>
+                                            25</span>
                                     </div>
                                     <div class="action">
                                         <a href="#" class="text-secondary font-weight-medium"> Answer Now >> </a>
@@ -1970,22 +2060,26 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6" data-aos="flip-right">
+                    <div class="col-md-6 wow flipInX">
                         <div class="question-box d-flex mb-3">
                             <div class="icon mr-3">
                                 <img src="images/Icons/question.png" alt="question">
                             </div>
                             <div class="content">
-                                <h5 class="font-weight-semi">Lorem Ipsum is simply dummy text of the printing ?
-                                </h5>
+                                <h5 class="font-weight-semi"><a href="#" class="text-dark">Lorem Ipsum is simply dummy
+                                        text of the printing ?</a></h5>
+
                                 <p>Lorem Ipsum is simply dummy text of the printing & typesetting industry. Lorem Ipsum
                                     has been the industry's standard dummy.
 
                                 </p>
                                 <div class="meta border-top py-2 d-flex align-items-center justify-content-between">
                                     <div class="stats fs-15 font-weight-bold">
-                                        <span class="mr-3 cursor-pointer"><i class="far fa-thumbs-up"></i>2570</span>
-                                        <span class="cursor-pointer"><span class="far fa-eye"> </span> 25</span>
+                                        <span class="mr-2 cursor-pointer"><i
+                                                class="far fa-thumbs-up text-secondary mr-2"></i>2570</span>
+                                        <span class="cursor-pointer"><span class="far fa-eye text-secondary mr-1">
+                                            </span>
+                                            25</span>
                                     </div>
                                     <div class="action">
                                         <a href="#" class="text-secondary font-weight-medium"> Answer Now >> </a>
@@ -1994,22 +2088,26 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6" data-aos="flip-right">
+                    <div class="col-md-6  wow flipInX">
                         <div class="question-box d-flex mb-3">
                             <div class="icon mr-3">
                                 <img src="images/Icons/question.png" alt="question">
                             </div>
                             <div class="content">
-                                <h5 class="font-weight-semi">Lorem Ipsum is simply dummy text of the printing ?
-                                </h5>
+                                <h5 class="font-weight-semi"><a href="#" class="text-dark">Lorem Ipsum is simply dummy
+                                        text of the printing ?</a></h5>
+
                                 <p>Lorem Ipsum is simply dummy text of the printing & typesetting industry. Lorem Ipsum
                                     has been the industry's standard dummy.
 
                                 </p>
                                 <div class="meta border-top py-2 d-flex align-items-center justify-content-between">
                                     <div class="stats fs-15 font-weight-bold">
-                                        <span class="mr-3 cursor-pointer"><i class="far fa-thumbs-up"></i>2570</span>
-                                        <span class="cursor-pointer"><span class="far fa-eye"> </span> 25</span>
+                                        <span class="mr-2 cursor-pointer"><i
+                                                class="far fa-thumbs-up text-secondary mr-2"></i>2570</span>
+                                        <span class="cursor-pointer"><span class="far fa-eye text-secondary mr-1">
+                                            </span>
+                                            25</span>
                                     </div>
                                     <div class="action">
                                         <a href="#" class="text-secondary font-weight-medium"> Answer Now >> </a>
@@ -2018,7 +2116,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 text-center mt-5">
+                    <div class="col-12 text-center mt-4 mt-md-5 pb-2">
                         <a href="#" class="btn btn-outline-primary rounded-pill">View all Q&A</a>
                     </div>
                 </div>
@@ -2032,11 +2130,11 @@
         <div class="container  overflow-x-hidden">
             <div class="inner position-relative pt-5 bg-light-pink">
                 <img src="images/download-right-icon.png" alt="right-icon" class="position-absolute floating-icon">
-                <div class="row text-center text-md-left" data-aos="fade-right">
-                    <div class="col-md-6  order-2 order-md-1">
+                <div class="row text-center text-md-left">
+                    <div class="col-md-6  order-2 order-md-1  wow fadeInRight">
                         <img src="images/app.png" alt="">
                     </div>
-                    <div class="col-md-6 d-flex align-items-center  order-1 order-md-2" data-aos="fade-left">
+                    <div class="col-md-6 d-flex align-items-center  order-1 order-md-2  wow fadeInLeft">
                         <div class="content py-md-3">
                             <div class="section-heading ">
                                 <h2 class="text-primary font-weight-bolder fs-40">DOWNLOAD PINK N BLU APP
@@ -2066,7 +2164,7 @@
         <div class="footer-top py-5">
             <div class="container overflow-x-hidden overflow-y-hidden">
                 <div class="row">
-                    <div class="order-1 order-md-1 order-lg-1 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="flip-down">
+                    <div class="order-1 order-md-1 order-lg-1 col-md-6 col-lg-3 mb-4 mb-lg-0 wow slideInUp">
                         <div class="footer-logo mb-4">
                             <img src="images/Icons/logo.png" alt="logo">
                         </div>
@@ -2081,13 +2179,13 @@
                             <li class="ml-2"><a href="#"><i class="fab fa-instagram"></i></a></li>
                         </ul>
                     </div>
-                    <div class="order-3   order-lg-2 col-lg-6" data-aos="flip-down">
+                    <div class="order-3   order-lg-2 col-lg-6 wow slideInUp">
                         <div class="row">
                             <div class="col-sm-4">
                                 <h4 class="text-dark mb-3 mb-md-5">Pink N Blu
                                 </h4>
 
-                                <ul class="footer-links">
+                                <ul class="footer-links column-2-mob">
                                     <li>
                                         <a href="#"> <i class="fas fa-angle-right mr-2"></i> Home </a>
                                     </li>
@@ -2111,7 +2209,7 @@
                             <div class="col-sm-8">
                                 <h4 class="text-dark mb-3 mb-md-5">For Parents</h4>
                                 <div class="row">
-                                    <div class="col-sm-6">
+                                    <div class="col-6">
                                         <ul class="footer-links">
                                             <li>
                                                 <a href="#"> <i class="fas fa-angle-right mr-2"></i> Vaccination </a>
@@ -2134,7 +2232,7 @@
                                         </ul>
                                     </div>
 
-                                    <div class="col-sm-6">
+                                    <div class="col-6">
                                         <ul class="footer-links">
                                             <li>
                                                 <a href="#"> <i class="fas fa-angle-right mr-2"></i> Videos </a>
@@ -2162,7 +2260,7 @@
 
                         </div>
                     </div>
-                    <div class="order-2  order-lg-3 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="flip-down">
+                    <div class="order-2  order-lg-3 col-md-6 col-lg-3 mb-4 mb-lg-0 wow slideInUp">
                         <div class="footer-contact">
                             <h4 class="text-dark mb-3 mb-md-5">Partner with us</h4>
                             <form action="">
@@ -2174,7 +2272,7 @@
 
                                 </div>
                             </form>
-                            <h4 class="text-dark">Discover our app
+                            <h4 class="text-dark text-uppercase">Discover our app
                             </h4>
                             <ul class="app-download-links d-flex align-items-center ">
 
@@ -2204,8 +2302,10 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/fontawesome.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/aos.js"></script>
+    <script src="js/wow.js"></script>
+
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
