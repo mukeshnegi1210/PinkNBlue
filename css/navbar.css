@@ -4,9 +4,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-
   background-color: rgba(0, 0, 0, 0.5);
-
   transition: all 300ms linear;
   z-index: 9999;
 }
@@ -17,19 +15,29 @@
   max-width: 400px;
   height: 100%;
   padding: 30px;
+
 }
+.primary-nav ul li{padding: 10px 0;}
 .primary-nav ul li + li {
-  padding-top: 10px;
+  padding-top: -10px;
+  border-top: 1px solid #ff007a;
 }
 
 .primary-nav ul li a {
-  color: #ffffff;
+  color: #817d7d;
   font-size: 20px;
   display: block;
+  text-align: center;
 }
+
 .primary-nav ul li a:hover {
   transform: translateX(10px);
+  color: #343a40;
 }
+.primary-nav ul li a.active{
+  color: #343a40;
+}
+
 
 .primary-nav .close-menu {
   position: absolute;
@@ -42,7 +50,7 @@
   line-height: 40px;
 }
 
-@media(max-width:500px){
+@media (max-width: 500px) {
   .primary-nav ul {
     max-width: 275px;
     height: 100%;
