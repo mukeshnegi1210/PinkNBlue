@@ -26,16 +26,19 @@ $(document).ready(function () {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: ".slider-nav"
+    asNavFor: ".slider-nav",
+      speed: 300
   });
   $(".slider-nav").slick({
-    slidesToShow:4,
+    slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: ".slider-for",
     dots: false,
     centerMode: false,
     focusOnSelect: true,
     vertical: true,
+ 
+    speed: 300,
     prevArrow: $(".banner-left .custom-controls .prev"),
     nextArrow: $(".banner-left .custom-controls .next"),
     responsive: [
@@ -44,7 +47,9 @@ $(document).ready(function () {
         settings: {
           arrows: false,
           vertical: false,
-          centerMode: true
+          centerMode: true,
+         
+         
         }
       },
 
@@ -55,6 +60,7 @@ $(document).ready(function () {
           vertical: false,
           centerMode: true,
           slidesToShow: 2,
+         
         }
       },
       {
@@ -69,19 +75,15 @@ $(document).ready(function () {
     ]
   });
 
-
-  
   // fixed header on scroll
   // show/hide nav  header on page load
 
   fixedHeader();
 
-  $(window).scroll(function() {
-      
-      // show/hide header on scroll
-      fixedHeader();
+  $(window).scroll(function () {
+    // show/hide header on scroll
+    fixedHeader();
   });
-
 
   function fixedHeader() {
     if ($(document).scrollTop() > 50) {
@@ -89,7 +91,7 @@ $(document).ready(function () {
     } else {
       $("#Header").removeClass("shrink bg-white shadow-sm");
     }
-  };
+  }
 
   // bottom to top scroll
   $(window).scroll(function () {
@@ -107,7 +109,7 @@ $(document).ready(function () {
   var window_width = $(window).width();
   function mobile_tabs() {
     $(".active-tab-indicator").click(function () {
-      $(this).next(".tab-list").slideToggle();
+      $(this).next(".tab-list").slideToggle(100);
     });
 
     $(".custom-tabs .tab-list li ").click(function () {
@@ -119,7 +121,7 @@ $(document).ready(function () {
         .find(".text")
         .empty()
         .append(tab_text);
-      $(this).closest(".custom-tabs .tab-list").slideUp();
+      $(this).closest(".custom-tabs .tab-list").slideUp(100);
     });
   }
 
